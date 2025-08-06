@@ -1,6 +1,11 @@
 name: CI Pipeline
 
 on:
+  workflow_dispatch:
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
   push:
     branches: [ "main" ]
 
